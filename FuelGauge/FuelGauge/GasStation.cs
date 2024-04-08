@@ -7,7 +7,7 @@ namespace FuelScriptCS
     // Token: 0x02000004 RID: 4
     public class GasStation : Script
     {
-        // Token: 0x06000006 RID: 6 RVA: 0x0000254C File Offset: 0x0000074C
+        // Token: 0x06000006 RID: 6 RVA: 0x000025A8 File Offset: 0x000007A8
         public GasStation()
         {
             base.Wait(8000);
@@ -59,7 +59,7 @@ namespace FuelScriptCS
             base.KeyDown += this.GasStation_KeyDown;
         }
 
-        // Token: 0x06000007 RID: 7 RVA: 0x00002864 File Offset: 0x00000A64
+        // Token: 0x06000007 RID: 7 RVA: 0x000028C0 File Offset: 0x00000AC0
         private void GasStation_KeyDown(object sender, GTA.KeyEventArgs e)
         {
             GasStation.fuelcostuser = base.Settings.GetValueInteger("FuelCost", "SETTINGS", 1);
@@ -84,7 +84,7 @@ namespace FuelScriptCS
             }
         }
 
-        // Token: 0x06000008 RID: 8 RVA: 0x00002B70 File Offset: 0x00000D70
+        // Token: 0x06000008 RID: 8 RVA: 0x0000207F File Offset: 0x0000027F
         // Note: this type is marked as 'beforefieldinit'.
         static GasStation()
         {

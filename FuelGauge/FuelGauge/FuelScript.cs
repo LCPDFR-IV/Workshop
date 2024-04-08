@@ -6,7 +6,7 @@ namespace FuelScriptCS
     // Token: 0x02000002 RID: 2
     public class FuelScript : Script
     {
-        // Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
+        // Token: 0x06000001 RID: 1 RVA: 0x00002084 File Offset: 0x00000284
         public FuelScript()
         {
             FuelScript.fuelmileage = (float)base.Settings.GetValueInteger("FUELMILEAGE", "SETTINGS", 8);
@@ -16,7 +16,7 @@ namespace FuelScriptCS
             base.Tick += this.FuelProgram;
         }
 
-        // Token: 0x06000002 RID: 2 RVA: 0x000020E8 File Offset: 0x000002E8
+        // Token: 0x06000002 RID: 2 RVA: 0x0000211C File Offset: 0x0000031C
         private void FuelProgram(object sender, EventArgs e)
         {
             if (base.Exists(base.Player.Character.CurrentVehicle))
@@ -77,7 +77,7 @@ namespace FuelScriptCS
             }
         }
 
-        // Token: 0x06000003 RID: 3 RVA: 0x000022E5 File Offset: 0x000004E5
+        // Token: 0x06000003 RID: 3 RVA: 0x00002050 File Offset: 0x00000250
         // Note: this type is marked as 'beforefieldinit'.
         static FuelScript()
         {
